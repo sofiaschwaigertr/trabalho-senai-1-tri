@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+    overflow-x: hidden;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.438);
+    width: 100vw;
+    height:auto;
+
+
+}
+.background-blur {
+    background-image: url(../fotos/1909jh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+  
+}
+.wrap-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+h1,h2{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #439475;
+    color: whitesmoke;
+    font-weight: 900;
+    letter-spacing: 2px;
+    width: 15.3%;
+    text-align: center;
+}
+@media (width >= 1024px){
+    .wrap-card{
+        flex-direction: row;
+        gap: 2vh;
+    }
+
+   
+
+}

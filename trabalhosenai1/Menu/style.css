@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+    font-family: "Anton", sans-serif;
+    background-image: url(/fotos/c4a45706-fe1b-4d19-8f69-2297388732fd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: auto;
+    overflow-x: hidden;
+    transition: all 500ms linear;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #076d5e;
+    text-shadow: 10px, 10px, 10px rgba(0, 0, 0, 0.09);
+    transition: all 200ms linear;
+    animation: show 2s linear;
+}
+
+.wrap-everything{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 100%;
+    width: 100%;
+}
+
+.wrap-img{
+    margin-bottom: 4vh;
+    opacity: 2.0;
+    animation: fromTop 2s linear;
+}
+
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-200px) rotate(360deg);
+    }
+    to{
+        opacity: 2.0;
+        transform: translateY(0px);
+    }
+}
+
+.img-style{
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.wrap-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+p{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #076d5e;
+    text-shadow: 10px, 10px, 10px rgba(0, 0, 0, 0.09);
+    transition: all 200ms linear;
+    animation: show 2s linear;
+    
+}
+h1 {
+    font-family: Helvetica;
+    color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+
+@keyframes show {
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 2.0;
+    }
+}
+@media (width >= 800px){
+    body{
+        background-image: url(../fotos/c4a45706-fe1b-4d19-8f69-2297388732fd.jpg);
+    }
+    .img-style{
+        width: 220px;
+    }
+    .wrap-p{
+        gap: 0;
+    }
+    p{
+        font-size: 3rem;
+        opacity:1;
+        font-weight: 900;
+        text-shadow: 1px 1px 2px black;
+    }
+}
